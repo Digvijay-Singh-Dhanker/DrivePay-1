@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/logo.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
     Drivepay
   </title>
@@ -54,23 +54,23 @@
         <ul class="nav">
           <li>
             <a href="./dashboard.html">
-              <i class="tim-icons icon-components"></i>
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
             <a href="./icons.html">
-              <i class="tim-icons icon-money-coins"></i>
+              <i class="tim-icons icon-atom"></i>
               <p>DrivePay</p>
             </a>
           </li>
           <li>
             <a href="./map.html">
-              <i class="tim-icons icon-map-big"></i>
+              <i class="tim-icons icon-pin"></i>
               <p>Navigation</p>
             </a>
           </li>
-          <li class="active">
+          <li class="active ">
             <a href="./notifications.html">
               <i class="tim-icons icon-bell-55"></i>
               <p>Notifications</p>
@@ -82,13 +82,30 @@
               <p>User Profile</p>
             </a>
           </li>
-           <li>
-            <a href="./contact.html">
-              <i class="tim-icons icon-email-85"></i>
-              <p>Contact Us</p>
+          <!-- <li>
+            <a href="./tables.html">
+              <i class="tim-icons icon-puzzle-10"></i>
+              <p>Table List</p>
             </a>
           </li>
-          
+          <li>
+            <a href="./typography.html">
+              <i class="tim-icons icon-align-center"></i>
+              <p>Typography</p>
+            </a>
+          </li>
+          <li>
+            <a href="./rtl.html">
+              <i class="tim-icons icon-world"></i>
+              <p>RTL Support</p>
+            </a>
+          </li>
+          <li class="active-pro">
+            <a href="./upgrade.html">
+              <i class="tim-icons icon-spaceship"></i>
+              <p>Upgrade to PRO</p>
+            </a>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -97,13 +114,6 @@
       <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <div class="navbar-toggle d-inline">
-              <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </button>
-            </div>
             <a class="navbar-brand" href="javascript:void(0)"><p id="time"></p></a>
             <script>
               var today = new Date();
@@ -181,62 +191,120 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">Offers</h4>
+                <h4 class="card-title">Notifications Style</h4>
               </div>
               <div class="card-body">
                 <div class="alert alert-info">
-                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i class="tim-icons icon-tag"></i>
-                  </button>
-                  <span>Get 10% off on all McDonald's Drive through</span>
+                  <span>This is a plain notification</span>
                 </div>
                 <div class="alert alert-info">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i class="tim-icons icon-tag"></i>
+                    <i class="tim-icons icon-simple-remove"></i>
                   </button>
-                  <span>Use Drive Pay wallet to and get upto 100 wallet points back</span>
+                  <span>This is a notification with close button.</span>
                 </div>
-                <div class="alert alert-info">
+                <div class="alert alert-info alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i class="tim-icons icon-tag"></i>
+                    <i class="tim-icons icon-simple-remove"></i>
                   </button>
-                  <span>Use Drive pay to get groceries to your car from Reliance Fresh and get upto 10% off</span>
+                  <span data-notify="icon" class="tim-icons icon-bell-55"></span>
+                  <span data-notify="message">This is a notification with close button and icon.</span>
                 </div>
-                
-                
+                <div class="alert alert-info alert-with-icon" data-notify="container">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span data-notify="icon" class="tim-icons icon-bell-55"></span>
+                  <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">Car Notification</h4>
+                <h4 class="card-title">Notification states</h4>
               </div>
               <div class="card-body">
                 <div class="alert alert-primary">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
                     <i class="tim-icons icon-simple-remove"></i>
                   </button>
-                  <span> Next Service: 03/01/2021</span>
+                  <span><b> Primary - </b> This is a regular notification made with ".alert-primary"</span>
                 </div>
                 <div class="alert alert-info">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
                     <i class="tim-icons icon-simple-remove"></i>
                   </button>
-                  <span>Engine Status: Optimal</span>
+                  <span><b> Info - </b> This is a regular notification made with ".alert-info"</span>
                 </div>
                 <div class="alert alert-success">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
                     <i class="tim-icons icon-simple-remove"></i>
                   </button>
-                  <span> Fuel Status: 50% used </span>
+                  <span><b> Success - </b> This is a regular notification made with ".alert-success"</span>
                 </div>
-                
-                
+                <div class="alert alert-warning">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
+                </div>
+                <div class="alert alert-danger">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
+                </div>
               </div>
             </div>
           </div>
-          
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="places-buttons">
+                  <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center">
+                      <h4 class="card-title">
+                        Notifications Places
+                        <p class="category">Click to view notifications</p>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','left')">Top Left</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','center')">Top Center</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','right')">Top Right</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- <footer class="footer">
